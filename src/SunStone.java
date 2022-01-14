@@ -14,17 +14,17 @@ public class SunStone {
         double tax=0;
         if (income>150000)
         {
-            tax+=(income-150000)*3/10;//195000
+            tax+=(income-150000)*3/10;
             income=150000;
         }
         if (income>60000)
         {
-            tax+=(income-60000)*2/10;//18000
+            tax+=(income-60000)*2/10;
             income=60000;
         }
         if (income>50000)
         {
-            tax+=(income-50000)/10;//600
+            tax+=(income-50000)/10;
         }
         return tax;
     }
