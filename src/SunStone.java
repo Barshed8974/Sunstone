@@ -5,12 +5,12 @@ public class SunStone {
         Scanner sc=new Scanner(System.in);
         System.out.println("Please Enter Your Income");
         double income=sc.nextDouble();
-        double tax=tax(income);
+        double tax= calculateTax(income);
         System.out.println("Your Tax Amount : "+tax);
         System.out.println("Amount After Tax Deduction : "+(income-tax));
     }
 
-    private static double tax(double income) {
+    private static double calculateTax(double income) {
         double tax=0;
         if (income>150000)
         {
